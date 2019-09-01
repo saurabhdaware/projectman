@@ -1,0 +1,17 @@
+{
+    "commandToOpen": "code",
+    "projects": [
+        {
+            "name": "PWAinit",
+            "path": "/home/saurabh/Desktop/projects/packages/pwainit"
+        },
+        {
+            "name": "VueExtra",
+            "path": "/home/saurabh/Desktop/projects/packages/vue-extra"
+        },
+        {
+            "path": "/home/saurabh/Desktop/projects/packages/projectman",
+            "name": "projectman"
+        }
+    ]
+}

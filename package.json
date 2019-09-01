@@ -1,15 +1,13 @@
 {
   "name": "projectman",
-  "version": "0.0.1",
-  "description": "Hate opening folders? Select and open your projects in your favourite editor straight from your command line without CDing into the folders.",
+  "version": "0.2.0",
+  "description": "Hate opening folders? Select and open your projects in your favourite editor straight from your command line without 'CD'ing into the deeply nested folders.",
   "main": "bin/index.js",
   "bin": {
-    "projectman": "bin/index.js"
+    "projectman": "bin/index.js",
+    "pm": "bin/index.js"
   },
   "preferGlobal": true,
-  "directories": {
-    "lib": "lib"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,16 +16,13 @@
     "url": "git+https://github.com/saurabhdaware/projectman.git"
   },
   "keywords": [
-    "project",
-    "manager",
+    "project-manager",
     "projectman",
-    "open",
-    "projects",
+    "open-projects",
     "projectmanager",
-    "congifure",
-    "projects"
+    "congifure-projects"
   ],
-  "author": "saurabhdaware",
+  "author": "Saurabh Daware <saurabhdaware99@gmail.com> (https://saurabhdaware.in)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/saurabhdaware/projectman/issues"

@@ -2,16 +2,12 @@
     "commandToOpen": "code",
     "projects": [
         {
-            "name": "PWAinit",
-            "path": "/home/saurabh/Desktop/projects/packages/pwainit"
+            "name": "Project1",
+            "path": "path/to/project1"
         },
         {
-            "name": "VueExtra",
-            "path": "/home/saurabh/Desktop/projects/packages/vue-extra"
-        },
-        {
-            "path": "/home/saurabh/Desktop/projects/packages/projectman",
-            "name": "projectman"
+            "name": "Project2",
+            "path": "path/to/project2"
         }
     ]
 }

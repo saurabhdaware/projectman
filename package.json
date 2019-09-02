@@ -1,6 +1,6 @@
 {
   "name": "projectman",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Hate opening folders? Select and open your projects in your favourite editor straight from your command line without 'CD'ing into the deeply nested folders.",
   "main": "bin/index.js",
   "bin": {
@@ -9,7 +9,10 @@
   },
   "preferGlobal": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "node build/prepublish.js",
+    "restoreSettings": "npm run prepublishOnly",
+    "precommit": "npm run prepublishOnly"
   },
   "repository": {
     "type": "git",

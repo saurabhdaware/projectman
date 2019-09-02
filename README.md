@@ -3,6 +3,7 @@
 ***The project is not yet stable and in its BETA stage right now so it might not work as it is suppose to though I will highly appreciate if anyone want to try it out and create some issues.***
 
 ![](/images/logo-192.png)
+
 [![projectman version](https://img.shields.io/npm/v/projectman.svg)](https://www.npmjs.org/package/projectman) [![projectman downloads](https://img.shields.io/npm/dt/projectman.svg)](http://npm-stat.com/charts.html?package=projectman)
 [![contributions welcome to projectman](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/saurabhdaware/projectman/issues) [![projectman license MIT](https://img.shields.io/npm/l/projectman.svg)](https://github.com/saurabhdaware/projectman/blob/master/LICENSE)
 

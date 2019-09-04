@@ -1,7 +1,5 @@
 # ProjectMan🦸
 
-***The project is not yet stable and in its BETA stage right now so it might not work as it is suppose to though I will highly appreciate if anyone want to try it out and create some issues.***
-
 ![](/images/logo-192.png)
 
 [![projectman version](https://img.shields.io/npm/v/projectman.svg)](https://www.npmjs.org/package/projectman) [![projectman downloads](https://img.shields.io/npm/dt/projectman.svg)](http://npm-stat.com/charts.html?package=projectman)
@@ -9,7 +7,7 @@
 
 [![https://nodei.co/npm/projectman.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/projectman.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/projectman)
 
-ProjectMan is a project manager command line tool to easily save open your favorite projects right from command line. 
+ProjectMan is a project manager command line tool to easily save/open your favorite projects right from command line in your favorite text editor. 
 
 Are you lazy to cd Desktop/projects/react/coolsite and then open the folder in your favorite text editor? Using project manager you can run `projectman open` or `pm open` and select the project and it will open it in your favorite text editor (default is set for vscode).
 
@@ -21,6 +19,9 @@ npm install -g projectman
 ```
 ---
 
+![Terminal Screen Record gif](images/terminal.gif)
+
+---
 ## Commands
 
 `pm` is an alias of `projectman` so you can use `pm <command>` or `projectman <command>`
@@ -52,6 +53,10 @@ Just do `pm remove` and select the project from the list
 ```shell
 pm seteditor
 ```
+
+This will show you available options of text editors. You can select from them and get started!
+
+Note: This package will only work with atom if you have the binaries inside environment variable (i.e `atom <projectDirectory>` works)
 
 ---
 

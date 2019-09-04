@@ -5,7 +5,6 @@ const action = require('../lib/action.js');
 program.version(require('../package.json').version);
 
 // Commands
-
 program
     .command('open [projectName]')
     .alias('o')
@@ -19,11 +18,29 @@ program
     .action(action.addProject);
 
 program
+    .command('remove [projectName]')
+    .description("Remove the project")
+    .action(action.removeProject);
+
+program
+    .command('seteditor')
+    .description("Set text editor to use")
+    .action(action.setEditor);
+
+program
     .command('edit')
     .description("Edit settings.json")
     .action(action.editConfigurations);
 
-program.usage("<command>");
+program
+    .arguments("<command>")
+    .action((command) => {
+        console.log(`Command ${command} not found\n`);
+        program.outputHelp();
+    });
+
+program.usage("<command>")
+
 
 if (process.argv.length <= 2){ // If no command mentioned then output help
     program.outputHelp();

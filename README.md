@@ -1,4 +1,4 @@
-# ProjectMan
+# ProjectMan🦸
 
 ***The project is not yet stable and in its BETA stage right now so it might not work as it is suppose to though I will highly appreciate if anyone want to try it out and create some issues.***
 
@@ -23,28 +23,35 @@ npm install -g projectman
 
 ## Commands
 
-#### Open Project
+`pm` is an alias of `projectman` so you can use `pm <command>` or `projectman <command>`
+
+### Open Project
 ```shell
 pm open
 ```
-
 optionally you can also directly enter the name of your project as argument 
 ```shell
 pm open myProject
 ```
 
-#### Add project
+### Add project
 ```shell
 cd /till/the/project
 pm add
 ```
 
-or you can directly edit config file using 
-```shell
-pm edit
-```
+*You might have to `sudo` while running add command as they need to write settings.json inside global npm directory*
 
-*You might have to `sudo` while running these commands as they need to write settings.json inside global npm directory*
+### Remove Project
+
+Just do `pm remove` and select the project from the list
+
+
+### Set Editor
+
+```shell
+pm seteditor
+```
 
 ---
 
@@ -80,18 +87,18 @@ type `pm edit` or `projectman edit` to open settings.json
 }
 ```
 
-#### Explaination:
+#### Settings Ref:
 
-**commandToOpen** :
+**> commandToOpen** :
 - This command will be used to open the file in your editor.
 - Default is `code` which opens in vscode.
 - For atom set value to `atom`
 - For sublime set value to `subl`
 
-**projects -> name** :
+**> projects -> name :**
 - This is the name that will be visible when you type `projectman open`
 
-**projects -> path** :
+**> projects -> path :**
 - This should be the absolute path to your folder.
 
 ---

@@ -9,7 +9,7 @@
 
 ProjectMan is a project manager command line tool to easily save/open your favorite projects right from command line in your favorite text editor. 
 
-Are you lazy to cd Desktop/projects/react/coolsite and then open the folder in your favorite text editor? Using project manager you can run `projectman open` or `pm open` and select the project and it will open it in your favorite text editor (default is set for vscode).
+Are you lazy to 'cd Desktop/projects/react/coolsite' and then open the folder in your favorite text editor? Add your favorite projects using `projectman add` and open them anytime you want using `projectman open`
 
 ---
 
@@ -19,7 +19,7 @@ npm install -g projectman
 ```
 ---
 
-![Terminal Screen Record gif](images/terminal.gif)
+![](images/terminal.png)
 
 ---
 ## Commands
@@ -30,7 +30,7 @@ npm install -g projectman
 ```shell
 pm open
 ```
-optionally you can also directly enter the name of your project as argument 
+optionally you can also directly enter the name of your project as an argument 
 ```shell
 pm open myProject
 ```

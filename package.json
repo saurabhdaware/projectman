@@ -11,7 +11,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepublishOnly": "node build/prepublish.js",
-    "restoreSettings": "npm run prepublishOnly"  
+    "restoreSettings": "npm run prepublishOnly"
   },
   "repository": {
     "type": "git",

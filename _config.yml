@@ -1,0 +1,4 @@
+title: ProjectMan
+logo: /images/logo-192.png
+description: Hate 'cd'ing to multiple folders to open a certain project? Use ProjectMan to add these projects and open them from command line using single command 'pm open'
+theme: jekyll-theme-minimal

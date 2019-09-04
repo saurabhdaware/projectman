@@ -41,11 +41,10 @@ cd /till/the/project
 pm add
 ```
 
-*You might have to `sudo` while running add command as they need to write settings.json inside global npm directory*
-
 ### Remove Project
 
 Just do `pm remove` and select the project from the list
+or do `pm remove <projectName>`
 
 
 ### Set Editor
@@ -53,21 +52,11 @@ Just do `pm remove` and select the project from the list
 ```shell
 pm seteditor
 ```
-
 This will show you available options of text editors. You can select from them and get started!
 
-Note: This package will only work with atom if you have the binaries inside environment variable (i.e `atom <projectDirectory>` works)
+*Note: This package will only work with atom if you have the binaries inside environment variable (i.e `atom <projectDirectory>` works)*
 
----
-
-## Usage
-```
-pm <command>
-``` 
-***or*** 
-```
-projectman <command>
-``` 
+*You might have to `sudo` while running add, remove, seteditor command as they need to write settings.json inside global npm directory*
 
 ---
 
@@ -106,6 +95,9 @@ type `pm edit` or `projectman edit` to open settings.json
 **> projects -> path :**
 - This should be the absolute path to your folder.
 
----
 
 Please note that the settings will be rewrote everytime you update the package so I will suggest to take copy of your settings.json
+
+---
+
+**Thank you for showing Interest! Do contribute to [projectman🦸 on GitHub](https://github.com/saurabhdaware/projectman)**

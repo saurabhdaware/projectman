@@ -100,4 +100,11 @@ Please note that the settings will be rewrote everytime you update the package s
 
 ---
 
-**Thank you for showing Interest! Do contribute to [projectman🦸 on GitHub](https://github.com/saurabhdaware/projectman)**
+## Contributing to ProjectMan
+[![contributions welcome to projectman](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/saurabhdaware/projectman/issues) 
+
+I would be extremely happy to have people contribute to ProjectMan. You can read Contribution guidelines in **[CONTRIBUTING.md](CONTRIBUTING.md)**
+
+---
+
+**Thank you for showing Interest! Do contribute and star to [ProjectMan🦸 on GitHub](https://github.com/saurabhdaware/projectman)**

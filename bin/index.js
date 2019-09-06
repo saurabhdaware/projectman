@@ -43,8 +43,8 @@ program.usage("<command>")
 
 
 if (process.argv.length <= 2){ // If no command mentioned then output help
-    program.outputHelp();
+    action.openProject();
 }
 
 // Parse arguments
-program.parse(process.argv)
+program.parse(process.argv);

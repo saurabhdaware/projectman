@@ -28,6 +28,11 @@ program
     .action(action.setEditor);
 
 program
+  .command('addeditor')
+  .description("Add new text editor to use")
+  .action(action.addEditor);
+
+program
     .command('edit')
     .description("Edit settings.json")
     .action(action.editConfigurations);

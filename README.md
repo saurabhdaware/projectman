@@ -9,7 +9,7 @@
 
 ProjectMan is a project manager command line tool to easily save/open your favorite projects right from command line in your favorite text editor. 
 
-Are you lazy to 'cd Desktop/projects/react/coolsite' and then open the folder in your favorite text editor? Add your favorite projects using `projectman add` and open them anytime you want using `projectman open`
+Are you lazy to 'cd Desktop/projects/react/coolsite' and then open the folder in your favorite text editor? Add your favorite projects using `pm add` and open them anytime you want using `pm open`
 
 ---
 
@@ -30,6 +30,12 @@ npm install -g projectman
 ```shell
 pm open
 ```
+or you can simply
+```
+pm
+```
+to open projects.
+
 optionally you can also directly enter the name of your project as an argument 
 ```shell
 pm open myProject
@@ -54,9 +60,7 @@ pm seteditor
 ```
 This will show you available options of text editors. You can select from them and get started!
 
-*Note: This package will only work with atom if you have the binaries inside environment variable (i.e `atom <projectDirectory>` works)*
-
-*You might have to `sudo` while running add, remove, seteditor command as they need to write settings.json inside global npm directory*
+*Note: This package will only work if your text editor supports command to open directory (e.g. VSCode has `code`, Sublime has `subl`)*
 
 ---
 
@@ -86,17 +90,34 @@ type `pm edit` or `projectman edit` to open settings.json
 **> commandToOpen** :
 - This command will be used to open the file in your editor.
 - Default is `code` which opens in vscode.
-- For atom set value to `atom`
-- For sublime set value to `subl`
+- This is the command that you normally use to open directories in your editor.
 
-**> projects -> name :**
+| Editor        |'commandToOpen' value|
+|---------------|-----------|
+| **VSCode**    | code      | 
+| **Atom**      | atom      | 
+| **Sublime**   | subl      | 
+| **Vim**       | vim       | 
+| **WebStorm**  | wstorm    |
+
+**> projects. name :**
 - This is the name that will be visible when you type `projectman open`
 
-**> projects -> path :**
+**> projects. path :**
 - This should be the absolute path to your folder.
 
 
-Please note that the settings will be rewrote everytime you update the package so I will suggest to take copy of your settings.json
+---
+
+## ChangeLogs
+
+#### v1.1.0 *[LATEST RELEASE]*
+
+- Projects will not be erased after updating furthur (However they will be erased while installing this update so I'll recommend to take copy of your settings.json If you have added multiple projects already) (Sorry but this is the last time you would have to do this)
+- Added `vim` in `pm seteditor` and added a message explaining 'How to set editors/IDE that are not listed in the menu'
+- `pm` is now equivalent to `pm open`
+
+***For More ChangeLog read [CHANGELOG.md](CHANGELOG.md)***
 
 ---
 
@@ -107,4 +128,4 @@ I would be extremely happy to have people contribute to ProjectMan. You can read
 
 ---
 
-**Thank you for showing Interest! Do contribute and star to [ProjectMan🦸 on GitHub](https://github.com/saurabhdaware/projectman)**
+**Thank you for showing Interest! Do contribute and star [ProjectMan🦸 on GitHub](https://github.com/saurabhdaware/projectman)**

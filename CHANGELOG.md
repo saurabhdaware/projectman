@@ -5,7 +5,7 @@
 ```shell
 npm install -g projectman
 ```
-- ***Project specific editors*** (Thanks to #4 @fechy for issue)
+- ***Project specific editors*** (Thanks [#4](https://github.com/saurabhdaware/projectman/issues/4) [@fechy](https://github.com/fechy) for issue)
      - Now you can `pm edit` and set `editor` key in `settings.json` projects[] with the value of the command of your editor.
     -  `settings.json` E.g.
 ```js
@@ -25,15 +25,16 @@ npm install -g projectman
 }
 ```
 This will allow users to open other projects in **VSCode** but use **Vim** to open `MyCoolProject`
- 
 
-
-- Projects will not be erased after updating furthur (However they will still be erased while installing this update so I'll recommend to take copy of your settings.json If you have added multiple projects already) (Sorry but this is the last time when you'll have to do this :cry: )) 
-(Thank you @codyaverett and @Tanuj69 issue (#2) and helping me out solving this)
-- Added `vim` in `pm seteditor` and added a message explaining 'How to set editors/IDE that are not listed in the menu'
-- `pm` is now equivalent to `pm open`
-(Thank you @johannesjo for suggestion)
-- `pm seteditor [commandToOpenEditor]` added which will set default editor command, This can be used when the editor you want to use is not listed in `pm seteditor`. (Note: `pm seteditor` will work exactly same as it did before)
+- ***Projects will not be erased after updating furthur*** 
+(However they will still be erased while installing this update so I'll recommend to take copy of your settings.json If you have added multiple projects already) (Sorry but this is the last time when you'll have to do this :cry: )) 
+(Thank you [@codyaverett](https://github.com/codyaverett) and [@Tanuj69](https://github.com/Tanuj69) issue [#2](https://github.com/saurabhdaware/projectman/issues/2) and helping me out solving this)
+- ***Added `vim` in `pm seteditor`*** 
+also added a message explaining 'How to set editors/IDE that are not listed in the menu'
+- `pm` is now alias for `pm open`
+(Thank you [@johannesjo](https://github.com/johannesjo) for suggestion)
+- **`pm seteditor [commandToOpenEditor]` added** 
+This will set default editor command, This can be used when the editor you want to use is not listed in `pm seteditor`. (Note: `pm seteditor` will work exactly same as it did before)
 
 ---
 

@@ -1,6 +1,6 @@
 {
   "name": "projectman",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Hate opening folders? Select and open your projects in your favourite editor straight from your command line without 'CD'ing into the deeply nested folders.",
   "main": "bin/index.js",
   "bin": {
@@ -9,9 +9,7 @@
   },
   "preferGlobal": true,
   "scripts": {
-    "test": "mocha --recursive \"./tests/*.js\"",
-    "prepublishOnly": "node build/prepublish.js",
-    "restoreSettings": "npm run prepublishOnly"
+    "test": "mocha --recursive \"./tests/*.js\""
   },
   "repository": {
     "type": "git",

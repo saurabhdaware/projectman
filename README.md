@@ -58,6 +58,17 @@ This will show you available options of text editors. You can select from them a
 
 *You might have to `sudo` while running add, remove, seteditor command as they need to write settings.json inside global npm directory*
 
+
+### Get project path
+```shell
+pm path 
+```
+
+optionally you can also specify the project name directly as an argument
+```shell
+pm path <projectName>
+```
+
 ---
 
 ## Settings.json

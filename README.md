@@ -60,7 +60,19 @@ pm seteditor
 ```
 This will show you available options of text editors. You can select from them and get started!
 
-*Note: This package will only work if your text editor supports command to open directory (e.g. VSCode has `code`, Sublime has `subl`)*
+#### If your editor is not listed:
+```shell
+pm seteditor [commandToOpen]
+```
+commandToOpen is the command you use to open your Editor/IDE from command line. E.g for VSCode we can use `code` to open folders in terminal so the command to set vscode will be `pm seteditor code`
+
+Read [commandsToOpen ref](#settings-ref) for more info.
+
+#### If you want to open `Project2` in Atom but other projects in VSCode:
+
+You can set `editor` key in [settings.json](settingsjson) with [commandToOpen](#settings-ref) value 
+
+**Read [example settings from 'pm edit'](#settingsjson)**
 
 ---
 
@@ -79,11 +91,18 @@ type `pm edit` or `projectman edit` to open settings.json
         },
         {
             "name": "Project2",
-            "path": "path/to/project2"
+            "path": "path/to/project2",
+            "editor": "atom"
+        },
+        {
+            "name": "Project3",
+            "path": "path/to/project3"
         }
     ]
 }
 ```
+This will show three projects in `pm open` and project2 will be opened in Atom and other projects will be opened in Visual Studio Code
+
 
 #### Settings Ref:
 
@@ -106,6 +125,10 @@ type `pm edit` or `projectman edit` to open settings.json
 **> projects. path :**
 - This should be the absolute path to your folder.
 
+**> projects. editor :**
+- This is optional key. In case it doesn't exist it will read value from `commandToOpen` 
+- You can use this to specify separate editor for a particular project.
+- You can set it by adding `"editor": "<commandToOpen>"` in projects array in settings.json ([Example](#settingsjson) is shown above) 
 
 ---
 
@@ -113,9 +136,40 @@ type `pm edit` or `projectman edit` to open settings.json
 
 #### v1.1.0 *[LATEST RELEASE]*
 
-- Projects will not be erased after updating furthur (However they will be erased while installing this update so I'll recommend to take copy of your settings.json If you have added multiple projects already) (Sorry but this is the last time you would have to do this)
-- Added `vim` in `pm seteditor` and added a message explaining 'How to set editors/IDE that are not listed in the menu'
-- `pm` is now equivalent to `pm open`
+- ***Project specific editors*** (Thanks to #4 @fechy for issue)
+     - Now you can `pm edit` and set `editor` key in `settings.json` projects[] with the value of the command of your editor.
+    -  `settings.json` E.g.
+```js
+{
+    "commandToOpen": "code",
+    "projects": [
+        {
+            "name":"MyCoolProject",
+            "path":"/home/path/projects/mycoolproject",
+            "editor":"vim"
+        },
+        {
+            "name":"TwoProject",
+            "path":"/path/something/project"
+        }
+    ]
+}
+```
+This will allow users to open other projects in **VSCode** but use **Vim** to open `MyCoolProject`
+ 
+
+
+- ***Projects will not be erased after updating furthur*** 
+(However they will still be erased while installing this update so I'll recommend to take copy of your settings.json If you have added multiple projects already) (Sorry but this is the last time when you'll have to do this :cry: )) 
+(Thank you @codyaverett and @Tanuj69 issue (#2) and helping me out solving this)
+- ***Added `vim` in `pm seteditor`*** 
+also added a message explaining 'How to set editors/IDE that are not listed in the menu'
+- `pm` is now alias for `pm open`
+(Thank you @johannesjo for suggestion)
+- **`pm seteditor [commandToOpenEditor]` added** 
+This will set default editor command, This can be used when the editor you want to use is not listed in `pm seteditor`. (Note: `pm seteditor` will work exactly same as it did before)
+
+
 
 ***For More ChangeLog read [CHANGELOG.md](CHANGELOG.md)***
 

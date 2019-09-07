@@ -9,7 +9,7 @@
   },
   "preferGlobal": true,
   "scripts": {
-    "test": "mocha",
+    "test": "mocha --recursive \"./tests/*.js\"",
     "prepublishOnly": "node build/prepublish.js",
     "restoreSettings": "npm run prepublishOnly"
   },

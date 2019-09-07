@@ -23,7 +23,7 @@ program
     .action(action.removeProject);
 
 program
-    .command('seteditor')
+    .command('seteditor [commandToOpen]')
     .description("Set text editor to use")
     .action(action.setEditor);
 

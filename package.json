@@ -9,7 +9,7 @@
   },
   "preferGlobal": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha --recursive \"./tests/*.js\"",
     "prepublishOnly": "node build/prepublish.js",
     "restoreSettings": "npm run prepublishOnly"
   },
@@ -34,5 +34,9 @@
     "chalk": "^2.4.2",
     "commander": "^3.0.1",
     "inquirer": "^7.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0"
   }
 }

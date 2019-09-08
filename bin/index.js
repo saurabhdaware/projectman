@@ -33,6 +33,12 @@ program
     .action(action.editConfigurations);
 
 program
+    .command('getpath [projectName]')
+    .alias('path')
+    .description("Get project path")
+    .action(action.getProjectPath);
+
+program
     .arguments("<command>")
     .action((command) => {
         console.log(`Command ${command} not found\n`);

@@ -74,6 +74,17 @@ You can set `editor` key in [settings.json](settingsjson) with [commandToOpen](#
 
 **Read [example settings from 'pm edit'](#settingsjson)**
 
+
+### Get project path
+```shell
+pm path 
+```
+
+optionally you can also specify the project name directly as an argument
+```shell
+pm path <projectName>
+```
+
 ---
 
 ## Settings.json

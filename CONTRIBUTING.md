@@ -10,8 +10,7 @@
 There are two important folders that you should care about `lib` and `bin`
 ```
 - lib
-    -> action.js // Contains all the main logic
-    -> settings.json // project path are stored here on running commands like 'pm add'
+    -> action.js // Contains all the main logic and functions
 - bin
     -> index.js // Main file, This file is triggered when `projectman` or `pm` is called
 ```
@@ -22,8 +21,8 @@ There are two important folders that you should care about `lib` and `bin`
 
 - For Contributing to this project or any project on GitHub
   1. Fork project.
-  2. Create a branch with the name of feature that you're working on (e.g. 'better-add-command').
-  3. Once you're done coding create a merge request from your new branch to my master. (Read the Local Development section above for local setup guidelines)
+  2. Create a branch with the name of feature that you're working on (e.g. `multiple-editors`).
+  3. Once you're done coding create a merge request from your new branch to my `develop`. (Read the Local Development section above for local setup guidelines)
 
 
 ## Coding Guidelines

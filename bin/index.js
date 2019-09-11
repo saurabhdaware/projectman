@@ -35,7 +35,7 @@ program
 
 program
     .command('getpath [projectName]')
-    .alias('path')
+    .alias('gp')
     .description("Get project path")
     .action(action.getProjectPath);
 

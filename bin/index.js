@@ -29,6 +29,12 @@ program
     .action(action.setEditor);
 
 program
+    .command('rmeditor [projectName]')
+    .description("Remove text editor to use")
+    .option('-a|--all', 'remove editors from all projects')
+    .action(action.rmEditor);
+
+program
     .command('edit')
     .description("Edit settings.json")
     .action(action.editConfigurations);

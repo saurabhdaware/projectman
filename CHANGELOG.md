@@ -11,7 +11,7 @@ npm install -g projectman
 - [Presenting ProjectMan Binaries](#presenting-projectman-binaries)
 - [`cd` to directory without opening the project](#cd-to-directory-without-opening-the-project)
 - [Added `--for-project` flag in `pm seteditor`](#added-for-project-flag-in-pm-seteditor)
-- [`Other` option added in `pm seteditor`](#other-option-added-in-pm-seteditor)
+- [`Other` option addbed in `pm seteditor`](#other-option-added-in-pm-seteditor)
 - [New command `pm rmeditor`](#new-command-pm-rmeditor)
 ---
 
@@ -19,6 +19,7 @@ npm install -g projectman
 Why should Node developers have all the fun? Now use ProjectMan without NodeJS or NPM installed.
 
 Download binaries and follow installation instructions given with them :
+
 [![Download button for windows](https://img.shields.io/badge/for_windows-0099ff?style=for-the-badge&logo=windows)](https://apps.saurabhdaware.in/projectman#windows) [![Download button for Linux](https://img.shields.io/badge/for_linux-032f62?style=for-the-badge&logo=linux&logoColor=white)](https://apps.saurabhdaware.in/projectman/#linux-and-mac) [![Download button for MACOS](https://img.shields.io/badge/for_macos-111111?style=for-the-badge&logo=apple&logoColor=white)](https://apps.saurabhdaware.in/projectman/#linux-and-mac)
 
 #### > `cd` to directory without opening the project.

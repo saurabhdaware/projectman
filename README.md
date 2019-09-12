@@ -173,6 +173,7 @@ pm seteditor --for-project
 ```
 This will allow users to set different editor for a specific project
 E.g. Set Atom for `Project1` and have VSCode for other projects
+
 **Isssue :** [#13](https://github.com/saurabhdaware/projectman/issues/13)
 **PR :** [#16](https://github.com/saurabhdaware/projectman/pull/16)
 

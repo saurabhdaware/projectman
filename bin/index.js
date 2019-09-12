@@ -25,12 +25,25 @@ program
 program
     .command('seteditor [commandToOpen]')
     .description("Set text editor to use")
+    .option('-f|--for-project [projectName]', 'set different editor for specific project')
     .action(action.setEditor);
+
+program
+    .command('rmeditor [projectName]')
+    .description("Remove text editor to use")
+    .option('-a|--all', 'remove editors from all projects')
+    .action(action.rmEditor);
 
 program
     .command('edit')
     .description("Edit settings.json")
     .action(action.editConfigurations);
+
+program
+    .command('getpath [projectName]')
+    .alias('gp')
+    .description("Get project path")
+    .action(action.getProjectPath);
 
 program
     .arguments("<command>")

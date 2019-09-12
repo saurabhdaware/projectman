@@ -76,7 +76,7 @@ cd $(pm getpath [projectName])
 ```
 `[projectName]` is an optional parameter.
 **Alias :** `cd $(pm gp)`
-
+(Note: This does not work in Windows cmd, You can use it in Windows Powershell)
 
 ### ## Remove Project
 ```shell

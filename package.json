@@ -32,7 +32,8 @@
   "dependencies": {
     "chalk": "^2.4.2",
     "commander": "^3.0.1",
-    "inquirer": "^7.0.0"
+    "inquirer": "^7.0.0",
+    "open": "^6.4.0"
   },
   "devDependencies": {
     "chai": "^4.2.0",

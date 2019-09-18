@@ -31,7 +31,7 @@
   "homepage": "https://github.com/saurabhdaware/projectman#readme",
   "dependencies": {
     "commander": "^3.0.1",
-    "inquirer": "^7.0.0"
+    "prompts": "^2.2.1"
   },
   "devDependencies": {
     "chai": "^4.2.0",

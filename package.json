@@ -10,7 +10,7 @@
   "preferGlobal": true,
   "scripts": {
     "test": "mocha --recursive \"./tests/*.js\"",
-    "build": "pkg ./package.json --out-path ./dist"
+    "build": "pkg ./package.json --out-path ./dist || echo '\nPlease first `npm install -g pkg` to run this command'"
   },
   "repository": {
     "type": "git",
@@ -35,7 +35,6 @@
   },
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^6.2.0",
-    "pkg": "^4.4.0"
+    "mocha": "^6.2.0"
   }
 }

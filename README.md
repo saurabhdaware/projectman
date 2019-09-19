@@ -45,12 +45,21 @@ pm open [projectName]
 
 **Alias:** `pm o`, `pm`
 
+v1.3.0 onwards, after typing `pm open` you can start typing letters and it will autocomplete the project name.
 
 ### ## Add project
 ```shell
 cd /till/the/project
 pm add
 ```
+
+### ## Add URL
+***Added in v1.3.0.***
+```shell
+pm add --url
+```
+This command can be used to save your repositories/websites/any other important links. 
+These links will show up in normal `pm open` with `(URL)` appended to their name.
 
 ### ## Set Editor
 
@@ -156,36 +165,17 @@ This will show three projects in `pm open` and project2 will be opened in Atom a
 
 ## ChangeLogs
 
-### v1.2.0 *[LATEST RELEASE]*
+### v1.3.0 *[LATEST RELEASE]*
 
-#### > `cd` to directory without opening the project.
-```shell
-cd $(pm getpath)
-```
-This will allow users to jump to a directory in command line without opening the project.
-
-**PR :** [#9](https://github.com/saurabhdaware/projectman/pull/9) (Thank You [@ZakariaTalhami](https://github.com/ZakariaTalhami))
-**Issue :** [#5](https://github.com/saurabhdaware/projectman/issues/5) (Thank you [@feitzi](https://github.com/feitzi))
-
-#### > `--for-project` flag in `pm seteditor`:
-```shell
-pm seteditor --for-project
-```
-This will allow users to set different editor for a specific project
-E.g. Set Atom for `Project1` and have VSCode for other projects
-
-**Isssue :** [#13](https://github.com/saurabhdaware/projectman/issues/13)
-**PR :** [#16](https://github.com/saurabhdaware/projectman/pull/16)
-
-#### > `Other` option added in `pm seteditor` :
-You can now select `other` option and type the editorCommand as an input rather than typing `pm seteditor [editorCommand]`
-
-#### > New command `pm rmeditor`:
-```shell
-pm rmeditor
-```
-This will allow users to remove the project specific editors.
-You can either `pm rmeditor` and choose the project to remove editor or `pm rmeditor --all` to remove all project specific editors.
+- ## Brought dependencies from 36 packages to 4 packages!! 🎉
+Some internal code refactoring and asking myself "Do I really need this package?" helped me bring down dependency tree of 37 packages to 4 packages!!!
+- ## AutoComplete added during project selection.
+In `pm open` and other project selection menus. You can now start typing the letters and list will be filtered out to show projects matching the letters.
+- ## Ability to open/add URLs  (Thank You [@ZakariaTalhami](https://github.com/ZakariaTalhami) for PR [#20](https://github.com/saurabhdaware/projectman/pull/20) )
+    - `pm add --url [URL]` to add URLs to the projectman. `[URL]` is an optional parameter
+    - These URLs will show up in `pm open` with (URL) appended to their names.
+    - On selecting the URL in `pm open` they will be opened in your default browser.
+    - This can be used to store your repositories/websites/other useful links.
 
 **.
 .

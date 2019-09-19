@@ -3,10 +3,13 @@
 
 
 ### v1.3.0 *[LATEST RELEASE]*
-
+---
 ```shell
 npm install -g projectman
 ```
+**Release Date:** 20th Sept, 2019
+
+---
 
 - ## Brought dependencies from 36 packages to 4 packages!! 🎉
 Some internal code refactoring and asking myself "Do I really need this package?" helped me bring down dependency tree of 37 packages to 4 packages!!!
@@ -19,7 +22,7 @@ In `pm open` and other project selection menus. You can now start typing the let
     - This can be used to store your repositories/websites/other useful links.
 
 ---
-
+---
 ### v1.2.0
 ```shell
 npm install -g projectman@1.2.0

@@ -1,14 +1,19 @@
 # ProjectMan🦸
 
-![](/images/logo-192.png)
+<br>
+<p align="center">
 
-[![projectman version](https://img.shields.io/npm/v/projectman?style=flat-square)](https://www.npmjs.org/package/projectman) [![projectman downloads](https://img.shields.io/npm/dt/projectman?label=npm%20downloads&style=flat-square)](http://npm-stat.com/charts.html?package=projectman)
-[![contributions welcome to projectman](https://img.shields.io/badge/contributions-welcome-brightgreen?style=flat-square&logo=github)](https://github.com/saurabhdaware/projectman/issues) [![projectman license MIT](https://img.shields.io/npm/l/projectman?color=success&style=flat-square)](https://github.com/saurabhdaware/projectman/blob/master/LICENSE)
+<img src="/images/logo-192.png">
+<br><br>
+<a href="https://www.npmjs.org/package/projectman"><img src="https://img.shields.io/npm/v/projectman?style=flat-square"></a>
+<a href="https://www.npmjs.org/package/projectman"><img src="https://img.shields.io/npm/dm/projectman?label=npm%20downloads&style=flat-square"></a>
+<a href="https://www.npmjs.org/package/projectman"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen?style=flat-square&logo=github"></a>
+<a href="https://www.npmjs.org/package/projectman"><img src="https://img.shields.io/npm/l/projectman?color=success&style=flat-square"></a>
 
-[![https://nodei.co/npm/projectman.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/projectman.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/projectman)
+<br>
+<a href="https://www.npmjs.com/package/projectman"><img src="https://nodei.co/npm/projectman.png?downloads=true&downloadRank=true&stars=true"></a>
 
-
-![]()
+</p>
 ProjectMan is a CLI which lets you add projects to favorites using command `pm add` and open them from anywhere you want using command `pm open`.
 
 Along with this there are also other commands like `pm seteditor`, `pm remove`, `cd $(pm getpath)` which we will see below.
@@ -184,7 +189,10 @@ In `pm open` and other project selection menus. You can now start typing the let
 ***For More Changes read [CHANGELOG.md](CHANGELOG.md)***
 
 ---
+## Rust Port
+[@hskang9](https://github.com/hskang9) has made a pretty cool rust port for projectman. You can check it out at: https://github.com/hskang9/projectman-rust
 
+---
 ## Contributing to ProjectMan
 [![contributions welcome to projectman](https://img.shields.io/badge/contributions-welcome-brightgreen?style=flat-square&logo=github)](https://github.com/saurabhdaware/projectman/issues)
 

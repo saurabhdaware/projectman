@@ -1,9 +1,31 @@
 # Production Releases
 (Note: Only production releases will be mentioned here, If you want to see beta releases, you can find them [here](https://github.com/saurabhdaware/projectman/releases))
 
-### v1.2.0 *[LATEST RELEASE]*
+
+### v1.3.0 *[LATEST RELEASE]*
+---
 ```shell
 npm install -g projectman
+```
+**Release Date:** 20th Sept, 2019
+
+---
+
+- ## Brought dependencies from 36 packages to 4 packages!! 🎉
+Some internal code refactoring and asking myself "Do I really need this package?" helped me bring down dependency tree of 37 packages to 4 packages!!!
+- ## AutoComplete added during project selection.
+In `pm open` and other project selection menus. You can now start typing the letters and list will be filtered out to show projects matching the letters.
+- ## Ability to open/add URLs  (Thank You [@ZakariaTalhami](https://github.com/ZakariaTalhami) for PR [#20](https://github.com/saurabhdaware/projectman/pull/20) )
+    - `pm add --url [URL]` to add URLs to the projectman. `[URL]` is an optional parameter
+    - These URLs will show up in `pm open` with (URL) appended to their names.
+    - On selecting the URL in `pm open` they will be opened in your default browser.
+    - This can be used to store your repositories/websites/other useful links.
+
+---
+---
+### v1.2.0
+```shell
+npm install -g projectman@1.2.0
 ```
 **Release Date:** 12th Sept, 2019
 

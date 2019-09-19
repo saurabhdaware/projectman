@@ -14,6 +14,7 @@ program
 program
     .command('add [projectDirectory]')
     .alias('save')
+    .option('-u, --url [link]', 'Add a link to a repository to projects')
     .description("Save current directory as a project")
     .action(action.addProject);
 

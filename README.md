@@ -22,8 +22,7 @@ ProjectMan is a CLI which lets you add projects to favorites using command `pm a
 Along with this there are also other commands like `pm seteditor`, `pm remove`, `cd $(pm getpath)` mentioned in documentation below.
 
 ---
-
-![ProjectMan gif explaining how it works](images/terminal.gif)
+<p align="center"><img width=800 alt="ProjectMan gif explaining how it works" src="images/terminal.gif"></p>
 
 ---
 

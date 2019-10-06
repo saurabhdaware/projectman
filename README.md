@@ -3,7 +3,7 @@
 <br>
 <p align="center">
 
-<img src="/images/logo-192.png">
+<img src="https://res.cloudinary.com/saurabhdaware/image/upload/v1570355296/npm/projectman/logo-192.png">
 <br><br>
 <a href="https://www.npmjs.org/package/projectman"><img src="https://img.shields.io/npm/v/projectman?style=flat-square&logo=npm&label=version"></a>
 <a href="https://www.npmjs.org/package/projectman"><img src="https://img.shields.io/badge/dependencies-2-brightgreen?style=flat-square&logo=npm"></a>
@@ -22,7 +22,7 @@ ProjectMan is a CLI which lets you add projects to favorites using command `pm a
 Along with this there are also other commands like `pm seteditor`, `pm remove`, `cd $(pm getpath)` mentioned in documentation below.
 
 ---
-<p align="center"><img width=800 alt="ProjectMan gif explaining how it works" src="images/terminal.gif"></p>
+<p align="center"><img width=800 alt="ProjectMan gif explaining how it works" src="https://res.cloudinary.com/saurabhdaware/image/upload/v1570355298/npm/projectman/terminal.gif"></p>
 
 ---
 

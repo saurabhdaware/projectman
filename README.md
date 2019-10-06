@@ -5,9 +5,10 @@
 
 <img src="https://res.cloudinary.com/saurabhdaware/image/upload/v1570355296/npm/projectman/logo-192.png">
 <br><br>
-<a href="https://www.npmjs.org/package/projectman"><img src="https://img.shields.io/npm/v/projectman?style=flat-square&logo=npm&label=version"></a>
-<a href="https://www.npmjs.org/package/projectman"><img src="https://img.shields.io/badge/dependencies-2-brightgreen?style=flat-square&logo=npm"></a>
-<a href="https://www.npmjs.org/package/projectman"><img alt="npm" src="https://img.shields.io/npm/dt/projectman?label=npm%20downloads&logo=npm&style=flat-square"></a>
+<a href="https://www.npmjs.org/package/projectman"><img src="https://img.shields.io/npm/v/projectman?style=flat-square&logo=npm&label=npm"></a>
+<a href="https://www.npmjs.org/package/projectman"><img alt="npm" src="https://img.shields.io/npm/dt/projectman?label=npm%20downloads&style=flat-square"></a>
+<a href="https://www.npmjs.org/package/projectman"><img alt="npm bundle size" src="https://img.shields.io/bundlephobia/min/projectman?color=brightgreen&label=package%20size&style=flat-square"></a>
+<br>
 <a href="https://www.npmjs.org/package/projectman"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen?style=flat-square&logo=github"></a>
 <a href="https://www.npmjs.org/package/projectman"><img src="https://img.shields.io/npm/l/projectman?color=success&style=flat-square"></a>
 

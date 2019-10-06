@@ -1,8 +1,11 @@
 # Production Releases
 (Note: Only production releases will be mentioned here, If you want to see beta releases, you can find them [here](https://github.com/saurabhdaware/projectman/releases))
 
+### v1.3.1 *[LATEST RELEASE]*
 
-### v1.3.0 *[LATEST RELEASE]*
+Documentation Update
+
+### v1.3.0 
 ---
 ```shell
 npm install -g projectman

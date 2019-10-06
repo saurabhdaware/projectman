@@ -5,18 +5,25 @@
 
 <img src="/images/logo-192.png">
 <br><br>
-<a href="https://www.npmjs.org/package/projectman"><img src="https://img.shields.io/npm/v/projectman?style=flat-square"></a>
-<a href="https://www.npmjs.org/package/projectman"><img src="https://img.shields.io/npm/dm/projectman?label=npm%20downloads&style=flat-square"></a>
+<a href="https://www.npmjs.org/package/projectman"><img src="https://img.shields.io/npm/v/projectman?style=flat-square&logo=npm&label=version"></a>
+<a href="https://www.npmjs.org/package/projectman"><img src="https://img.shields.io/badge/dependencies-2-brightgreen?style=flat-square&logo=npm"></a>
+<a href="https://www.npmjs.org/package/projectman"><img alt="npm" src="https://img.shields.io/npm/dt/projectman?label=npm%20downloads&logo=npm&style=flat-square"></a>
 <a href="https://www.npmjs.org/package/projectman"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen?style=flat-square&logo=github"></a>
 <a href="https://www.npmjs.org/package/projectman"><img src="https://img.shields.io/npm/l/projectman?color=success&style=flat-square"></a>
+
 
 <br>
 <a href="https://www.npmjs.com/package/projectman"><img src="https://nodei.co/npm/projectman.png?downloads=true&downloadRank=true&stars=true"></a>
 
 </p>
+
 ProjectMan is a CLI which lets you add projects to favorites using command `pm add` and open them from anywhere you want using command `pm open`.
 
-Along with this there are also other commands like `pm seteditor`, `pm remove`, `cd $(pm getpath)` which we will see below.
+Along with this there are also other commands like `pm seteditor`, `pm remove`, `cd $(pm getpath)` mentioned in documentation below.
+
+---
+
+![ProjectMan gif explaining how it works](images/terminal.gif)
 
 ---
 
@@ -35,9 +42,6 @@ npm install -g projectman
 
 ---
 
-![](images/terminal.png)
-
----
 ## # Commands
 `pm` is an alias of `projectman` so you can use `pm <command>` or `projectman <command>`
 

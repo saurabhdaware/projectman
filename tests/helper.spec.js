@@ -1,10 +1,10 @@
-const { isURL } = require('../lib/helper')
+const { isURL } = require('../lib/helper');
 
 const expect = require('chai').expect;
 
 describe('helper', ()=> {
     
-    it('isURL()', () => {
+    it('#isURL()', () => {
         // Links
         expect(isURL("https://www.google.com")).to.be.true
         expect(isURL("https://www.data.gov.in")).to.be.true

@@ -1,7 +1,3 @@
-// This config file contains Mocha's defaults.
-// As you can see, comments are allowed.
-// This same configuration could be provided in the `mocha` property of your
-// project's `package.json`.
 {
     "diff": true,
     "extension": ["js"],

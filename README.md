@@ -174,20 +174,12 @@ This will show three projects in `pm open` and project2 will be opened in Atom a
 
 ## ChangeLogs
 
-### v1.3.0 *[LATEST RELEASE]*
+### v1.3.2 *[LATEST RELEASE]*
 
-- ## Brought dependencies from 36 packages to 4 packages!! 🎉
-Some internal code refactoring and asking myself "Do I really need this package?" helped me bring down dependency tree of 37 packages to 4 packages!!!
-- ## AutoComplete added during project selection.
-In `pm open` and other project selection menus. You can now start typing the letters and list will be filtered out to show projects matching the letters.
-- ## Ability to open/add URLs  (Thank You [@ZakariaTalhami](https://github.com/ZakariaTalhami) for PR [#20](https://github.com/saurabhdaware/projectman/pull/20) )
-    - `pm add --url [URL]` to add URLs to the projectman. `[URL]` is an optional parameter
-    - These URLs will show up in `pm open` with (URL) appended to their names.
-    - On selecting the URL in `pm open` they will be opened in your default browser.
-    - This can be used to store your repositories/websites/other useful links.
-
+- `pm getpath` Question fix
+- prompts updated to v2.3.0
+- Unit testing for helper added ([@junaidrahim](https://github.com/junaidrahim) - [#27](https://github.com/saurabhdaware/projectman/pull/27))
 **.
-.
 .
 .**
 ***For More Changes read [CHANGELOG.md](CHANGELOG.md)***

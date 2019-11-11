@@ -1,9 +1,16 @@
 # Production Releases
 (Note: Only production releases will be mentioned here, If you want to see beta releases, you can find them [here](https://github.com/saurabhdaware/projectman/releases))
+### v1.3.2 *[LATEST RELEASE]*
+- `pm getpath` Question fix
+- prompts updated to v2.3.0
+- Unit testing for helper added ([@junaidrahim](https://github.com/junaidrahim) - [#27](https://github.com/saurabhdaware/projectman/pull/27))
 
-### v1.3.1 *[LATEST RELEASE]*
+
+### v1.3.1 
 
 Documentation Update
+
+
 
 ### v1.3.0 
 ---

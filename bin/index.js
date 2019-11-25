@@ -1,17 +1,10 @@
 #!/usr/bin/env node
 const program = require('commander');
 const didYouMean = require('didyoumean');
-const action = require('../lib/action.js');
+const { suggestCommands } = require('../lib/helper');
+const action = require('../lib/action');
 
 program.version(require('../package.json').version);
-
-const suggestCommands = (cmd) => {
-	const suggestion = didYouMean(cmd, program.commands.map(cmd => cmd._name));
-	if (suggestion) {
-		console.log();
-		console.log(`Did you mean ${suggestion}?`);
-	}
-};
 	
 // Commands
 program

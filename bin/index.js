@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 const program = require('commander');
-const didYouMean = require('didyoumean');
 const { suggestCommands } = require('../lib/helper');
 const action = require('../lib/action');
 

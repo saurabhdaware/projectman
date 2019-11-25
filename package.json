@@ -31,6 +31,7 @@
   "homepage": "https://github.com/saurabhdaware/projectman#readme",
   "dependencies": {
     "commander": "^3.0.1",
+    "didyoumean": "^1.2.1",
     "prompts": "^2.3.0"
   },
   "devDependencies": {

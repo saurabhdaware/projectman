@@ -1,9 +1,18 @@
 #!/usr/bin/env node
 const program = require('commander');
+const didYouMean = require('didyoumean');
 const action = require('../lib/action.js');
 
 program.version(require('../package.json').version);
 
+const suggestCommands = (cmd) => {
+	const suggestion = didYouMean(cmd, program.commands.map(cmd => cmd._name));
+	if (suggestion) {
+		console.log();
+		console.log(`Did you mean ${suggestion}?`);
+	}
+};
+	
 // Commands
 program
     .command('open [projectName]')
@@ -51,6 +60,7 @@ program
     .action((command) => {
         console.log(`Command ${command} not found\n`);
         program.outputHelp();
+        suggestCommands(command);
     });
 
 program.usage("<command>")

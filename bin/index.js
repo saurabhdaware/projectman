@@ -4,7 +4,7 @@ const { suggestCommands } = require('../lib/helper');
 const action = require('../lib/action');
 
 program.version(require('../package.json').version);
-	
+
 // Commands
 program
     .command('open [projectName]')

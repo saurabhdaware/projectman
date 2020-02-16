@@ -174,11 +174,10 @@ This will show three projects in `pm open` and project2 will be opened in Atom a
 
 ## ChangeLogs
 
-### v1.3.2 *[LATEST RELEASE]*
+### v1.3.3 *[LATEST RELEASE]*
 
-- `pm getpath` Question fix
-- prompts updated to v2.3.0
-- Unit testing for helper added ([@junaidrahim](https://github.com/junaidrahim) - [#27](https://github.com/saurabhdaware/projectman/pull/27))
+Command suggestions added (Thanks [@jamesgeorge007](https://github.com/jamesgeorge007) for [#PR32](https://github.com/saurabhdaware/projectman/pull/32))
+
 **.
 .
 .**

@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 const program = require('commander');
-const action = require('../lib/action.js');
+const { suggestCommands } = require('../lib/helper');
+const action = require('../lib/action');
 
 program.version(require('../package.json').version);
 
@@ -51,6 +52,7 @@ program
     .action((command) => {
         console.log(`Command ${command} not found\n`);
         program.outputHelp();
+        suggestCommands(command);
     });
 
 program.usage("<command>")

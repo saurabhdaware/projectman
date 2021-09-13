@@ -10,7 +10,9 @@
   "preferGlobal": true,
   "scripts": {
     "test": "mocha --recursive \"./tests/*.js\"",
-    "build": "pkg ./package.json --out-path ./dist || echo '\nPlease first `npm install -g pkg` to run this command'"
+    "build": "pkg ./package.json --out-path ./dist || echo '\nPlease first `npm install -g pkg` to run this command'",
+    "eslint": "eslint lib bin",
+    "prettier": "prettier lib bin --write"
   },
   "repository": {
     "type": "git",
@@ -36,6 +38,11 @@
   },
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^6.2.0"
+    "eslint": "^7.0.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.3",
+    "mocha": "^6.2.0",
+    "prettier": "^2.0.5"
   }
 }

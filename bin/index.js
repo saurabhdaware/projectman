@@ -13,6 +13,12 @@ program
   .action(action.openProject);
 
 program
+  .command('create [projectName]')
+  .alias('c')
+  .description('Create project')
+  .action(action.createProject);
+
+program
   .command('add [projectDirectory]')
   .alias('save')
   .option('-u, --url [link]', 'Add a link to a repository to projects')

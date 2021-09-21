@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 const program = require('commander');
 const { suggestCommands } = require('../lib/helper');
-const action = require('../lib/action');
+const actions = require('../lib/actions');
 
 program.version(require('../package.json').version);
 
@@ -10,25 +10,25 @@ program
   .command('open [projectName]')
   .alias('o')
   .description('Open one of your saved projects')
-  .action(action.openProject);
+  .action(actions.openProject);
 
 program
   .command('create [projectName]')
   .alias('c')
   .description('Create project')
-  .action(action.createProject);
+  .action(actions.createProject);
 
 program
   .command('add [projectDirectory]')
   .alias('save')
   .option('-u, --url [link]', 'Add a link to a repository to projects')
   .description('Save current directory as a project')
-  .action(action.addProject);
+  .action(actions.addProject);
 
 program
   .command('remove [projectName]')
   .description('Remove the project')
-  .action(action.removeProject);
+  .action(actions.removeProject);
 
 program
   .command('seteditor [commandToOpen]')
@@ -37,24 +37,24 @@ program
     '-f|--for-project [projectName]',
     'set different editor for specific project'
   )
-  .action(action.setEditor);
+  .action(actions.setEditor);
 
 program
   .command('rmeditor [projectName]')
   .description('Remove text editor to use')
   .option('-a|--all', 'remove editors from all projects')
-  .action(action.rmEditor);
+  .action(actions.rmEditor);
 
 program
   .command('edit')
   .description('Edit settings.json')
-  .action(action.editConfigurations);
+  .action(actions.editConfigurations);
 
 program
   .command('getpath [projectName]')
   .alias('gp')
   .description('Get project path')
-  .action(action.getProjectPath);
+  .action(actions.getProjectPath);
 
 program.arguments('<command>').action((command) => {
   console.log(`Command ${command} not found\n`);
@@ -66,7 +66,7 @@ program.usage('<command>');
 
 if (process.argv.length <= 2) {
   // If no command mentioned then output help
-  action.openProject();
+  actions.openProject();
 }
 
 // Parse arguments

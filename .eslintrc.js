@@ -20,6 +20,7 @@ module.exports = {
     'arrow-parens': 0,
     'guard-for-in': 0,
     'valid-jsdoc': 0,
+    'no-undef': 'error',
     'operator-linebreak': [
       'error',
       'after',

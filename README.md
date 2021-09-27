@@ -27,25 +27,22 @@ Along with this there are also other commands like `pm seteditor`, `pm remove`, 
 
 ---
 
-## # Installation
+## Installation
 
-#### ## Using NPM
-If you have [NodeJS](https://nodejs.org) installed in your machine
+With [NodeJS](https://nodejs.org) installed in your machine,
 ```shell
 npm install -g projectman
 ```
-**OR**
-
-#### ## Download Binaries
-[![Download button for windows](https://img.shields.io/badge/for_windows-0099ff?style=for-the-badge&logo=windows)](https://apps.saurabhdaware.in/projectman#windows) [![Download button for Linux](https://img.shields.io/badge/for_linux-032f62?style=for-the-badge&logo=linux&logoColor=white)](https://apps.saurabhdaware.in/projectman/#linux-and-mac) [![Download button for MACOS](https://img.shields.io/badge/for_macos-111111?style=for-the-badge&logo=apple&logoColor=white)](https://apps.saurabhdaware.in/projectman/#linux-and-mac)
-
 
 ---
 
-## # Commands
+## Commands
 `pm` is an alias of `projectman` so you can use `pm <command>` or `projectman <command>`
 
-### ## Open Project
+### 📖 Open Project
+
+Opens project in your code editor (Check out [`pm seteditor`](#set-editor) command to set your preferred editor)
+
 **Usage :** 
 ```shell
 pm open [projectName]
@@ -54,28 +51,35 @@ pm open [projectName]
 
 **Alias:** `pm o`, `pm`
 
-v1.3.0 onwards, after typing `pm open` you can start typing letters and it will autocomplete the project name.
+### ➕ Add Project or Template
 
-### ## Add project
+Add project to favorites
+
 ```shell
 cd /till/the/project
 pm add
 ```
 
-### ## Add URL
-***Added in v1.3.0.***
-```shell
-pm add --url
-```
-This command can be used to save your repositories/websites/any other important links. 
-These links will show up in normal `pm open` with `(URL)` appended to their name.
+*You can pass `--url` param to add a URL instead of a directory.*
 
-### ## Set Editor
+### 🪄 Create Project
+
+Use added projects as a template to create new project
+
+```shell
+pm create
+```
+
+**Alias:** `pm c`
+
+### 💫 Set Editor
 
 ```shell
 pm seteditor
 ```
 Sets default editor to open projects from.
+
+To set a different editor for a specific project,
 
 **Flag:** `--for-project`
 ```shell
@@ -88,21 +92,24 @@ If your TextEditor/IDE is not listed, You can select option `Other` from the lis
 Read [editorCommand ref](#settings-ref) for more information.
 
 
-### ## `cd` to a project without opening.
+### 🏃🏽 `cd` to a project without opening.
 ```shell
 cd $(pm getpath [projectName])
 ```
+
 `[projectName]` is an optional parameter.
+
 **Alias :** `cd $(pm gp)`
+
 (Note: This does not work in Windows cmd, You can use it in Windows Powershell)
 
-### ## Remove Project
+### ❌ Remove Project
 ```shell
 pm remove
 ```
 Removes project from favorites.
 
-### ## Remove editor
+### ➖ Remove editor
 ```shell
 pm rmeditor
 ```
@@ -115,7 +122,7 @@ removes all project specific editors.
 
 ---
 
-## Settings.json
+## ⚙️ Settings.json
 
 If you want to sort projects/change name of project/change path, You can type `pm edit` to open settings.json
 
@@ -159,13 +166,13 @@ This will show three projects in `pm open` and project2 will be opened in Atom a
 | **Vim**       | vim       | 
 | **WebStorm**  | wstorm    |
 
-**> projects. name :**
+**> projects.`name` :**
 - This is the name that will be visible when you type `projectman open`
 
-**> projects. path :**
+**> projects.`path` :**
 - This should be the absolute path to your folder.
 
-**> projects. editor :**
+**> projects.`editor` :**
 - This is optional key. In case it doesn't exist it will read value from `commandToOpen` 
 - You can use this to specify separate editor for a particular project.
 - You can set it by adding `"editor": "<commandToOpen>"` in projects array in settings.json ([Example](#settingsjson) is shown above) 
@@ -174,13 +181,12 @@ This will show three projects in `pm open` and project2 will be opened in Atom a
 
 ## ChangeLogs
 
-### v1.3.3 *[LATEST RELEASE]*
+### v2.0.0 *`@latest`*
 
-Command suggestions added (Thanks [@jamesgeorge007](https://github.com/jamesgeorge007) for [#PR32](https://github.com/saurabhdaware/projectman/pull/32))
+- Add `pm create` command
+- Remove support for binaries
 
-**.
-.
-.**
+
 ***For More Changes read [CHANGELOG.md](CHANGELOG.md)***
 
 ---

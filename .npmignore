@@ -4,3 +4,8 @@ build
 dist
 _config.yml
 images
+.eslintrc.js
+.eslintignore
+.prettierignore
+.prettierrc
+.vscode/

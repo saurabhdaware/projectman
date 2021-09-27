@@ -1,9 +1,15 @@
 # Production Releases
 (Note: Only production releases will be mentioned here, If you want to see beta releases, you can find them [here](https://github.com/saurabhdaware/projectman/releases))
 
-### v1.3.3 *[LATEST RELEASE]*
-Command suggestions added (Thanks [@jamesgeorge007](https://github.com/jamesgeorge007) for [#PR32](https://github.com/saurabhdaware/projectman/pull/32))
+### v2.0.0 *[LATEST RELEASE]*
 
+- Add `pm create` command
+- Remove support for binaries
+
+
+### v1.3.3
+
+Command suggestions added (Thanks [@jamesgeorge007](https://github.com/jamesgeorge007) for [#PR32](https://github.com/saurabhdaware/projectman/pull/32))
 
 
 ### v1.3.2

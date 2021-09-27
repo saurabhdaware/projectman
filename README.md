@@ -39,7 +39,7 @@ npm install -g projectman
 ## Commands
 `pm` is an alias of `projectman` so you can use `pm <command>` or `projectman <command>`
 
-### Open Project
+### 📖 Open Project
 
 Opens project in your code editor (Check out [`pm seteditor`](#set-editor) command to set your preferred editor)
 
@@ -51,7 +51,7 @@ pm open [projectName]
 
 **Alias:** `pm o`, `pm`
 
-### Add Project or Template
+### ➕ Add Project or Template
 
 Add project to favorites
 
@@ -62,7 +62,7 @@ pm add
 
 *You can pass `--url` param to add a URL instead of a directory.*
 
-### Create Project
+### 🪄 Create Project
 
 Use added projects as a template to create new project
 
@@ -72,7 +72,7 @@ pm create
 
 **Alias:** `pm c`
 
-### Set Editor
+### 💫 Set Editor
 
 ```shell
 pm seteditor
@@ -92,7 +92,7 @@ If your TextEditor/IDE is not listed, You can select option `Other` from the lis
 Read [editorCommand ref](#settings-ref) for more information.
 
 
-### `cd` to a project without opening.
+### 🏃🏽 `cd` to a project without opening.
 ```shell
 cd $(pm getpath [projectName])
 ```
@@ -103,13 +103,13 @@ cd $(pm getpath [projectName])
 
 (Note: This does not work in Windows cmd, You can use it in Windows Powershell)
 
-### Remove Project
+### ❌ Remove Project
 ```shell
 pm remove
 ```
 Removes project from favorites.
 
-### Remove editor
+### ➖ Remove editor
 ```shell
 pm rmeditor
 ```
@@ -122,7 +122,7 @@ removes all project specific editors.
 
 ---
 
-## Settings.json
+## ⚙️ Settings.json
 
 If you want to sort projects/change name of project/change path, You can type `pm edit` to open settings.json
 
@@ -181,19 +181,12 @@ This will show three projects in `pm open` and project2 will be opened in Atom a
 
 ## ChangeLogs
 
-### v2.0.0 *[LATEST RELEASE]*
+### v2.0.0 *`@latest`*
 
 - Add `pm create` command
 - Remove support for binaries
 
 
-### v1.3.3
-
-Command suggestions added (Thanks [@jamesgeorge007](https://github.com/jamesgeorge007) for [#PR32](https://github.com/saurabhdaware/projectman/pull/32))
-
-**.
-.
-.**
 ***For More Changes read [CHANGELOG.md](CHANGELOG.md)***
 
 ---

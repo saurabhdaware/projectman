@@ -1,6 +1,8 @@
 const { isURL } = require('../lib/helper');
+const cleanUp = require('./utils/cleanup');
 
 describe('helper', () => {
+  afterEach(cleanUp);
   test('#isURL()', () => {
     // Links
     expect(isURL('https://www.google.com')).toBe(true);

@@ -18,7 +18,7 @@
         "projectman": "bin/index.js"
       },
       "devDependencies": {
-        "cli-testing-library": "^0.0.10",
+        "cli-testing-tool": "^0.2.0",
         "eslint": "^7.0.0",
         "eslint-config-google": "^0.14.0",
         "eslint-config-prettier": "^6.11.0",
@@ -1801,11 +1801,15 @@
       "integrity": "sha512-cOU9usZw8/dXIXKtwa8pM0OTJQuJkxMN6w30csNRUerHfeQ5R6U3kkU/FtJeIf3M202OHfY2U8ccInBG7/xogA==",
       "dev": true
     },
-    "node_modules/cli-testing-library": {
-      "version": "0.0.10",
-      "resolved": "https://registry.npmjs.org/cli-testing-library/-/cli-testing-library-0.0.10.tgz",
-      "integrity": "sha512-KyQZUzI2OaftUjlNZK7FBPM9sT/VHzGX5hbiaW+V90szZfZo6hpJQ0q/0IeecCaFdf27210hwmhySxfeKuuvKQ==",
-      "dev": true
+    "node_modules/cli-testing-tool": {
+      "version": "0.2.0",
+      "resolved": "https://registry.npmjs.org/cli-testing-tool/-/cli-testing-tool-0.2.0.tgz",
+      "integrity": "sha512-9hcOy/pYNivxAJ3uIlaU1WbPEeULx478WqF69ozPt305tl6sywCqqF5F7SzftfDytYr/+PLrYnvBs8ZJglJ0yA==",
+      "dev": true,
+      "dependencies": {
+        "node-ansiparser": "^2.2.0",
+        "node-ansiterminal": "^0.2.1-beta"
+      }
     },
     "node_modules/cliui": {
       "version": "7.0.4",
@@ -5213,6 +5217,18 @@
       "integrity": "sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=",
       "dev": true
     },
+    "node_modules/node-ansiparser": {
+      "version": "2.2.0",
+      "resolved": "https://registry.npmjs.org/node-ansiparser/-/node-ansiparser-2.2.0.tgz",
+      "integrity": "sha1-tyTT5eP6WoVCVrtjrOsJHnIHk60=",
+      "dev": true
+    },
+    "node_modules/node-ansiterminal": {
+      "version": "0.2.1-beta",
+      "resolved": "https://registry.npmjs.org/node-ansiterminal/-/node-ansiterminal-0.2.1-beta.tgz",
+      "integrity": "sha1-9baE9/E3XyDMcD2V+zPifPRu8pA=",
+      "dev": true
+    },
     "node_modules/node-int64": {
       "version": "0.4.0",
       "resolved": "https://registry.npmjs.org/node-int64/-/node-int64-0.4.0.tgz",
@@ -7797,11 +7813,15 @@
       "integrity": "sha512-cOU9usZw8/dXIXKtwa8pM0OTJQuJkxMN6w30csNRUerHfeQ5R6U3kkU/FtJeIf3M202OHfY2U8ccInBG7/xogA==",
       "dev": true
     },
-    "cli-testing-library": {
-      "version": "0.0.10",
-      "resolved": "https://registry.npmjs.org/cli-testing-library/-/cli-testing-library-0.0.10.tgz",
-      "integrity": "sha512-KyQZUzI2OaftUjlNZK7FBPM9sT/VHzGX5hbiaW+V90szZfZo6hpJQ0q/0IeecCaFdf27210hwmhySxfeKuuvKQ==",
-      "dev": true
+    "cli-testing-tool": {
+      "version": "0.2.0",
+      "resolved": "https://registry.npmjs.org/cli-testing-tool/-/cli-testing-tool-0.2.0.tgz",
+      "integrity": "sha512-9hcOy/pYNivxAJ3uIlaU1WbPEeULx478WqF69ozPt305tl6sywCqqF5F7SzftfDytYr/+PLrYnvBs8ZJglJ0yA==",
+      "dev": true,
+      "requires": {
+        "node-ansiparser": "^2.2.0",
+        "node-ansiterminal": "^0.2.1-beta"
+      }
     },
     "cliui": {
       "version": "7.0.4",
@@ -10361,6 +10381,18 @@
       "version": "1.4.0",
       "resolved": "https://registry.npmjs.org/natural-compare/-/natural-compare-1.4.0.tgz",
       "integrity": "sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=",
+      "dev": true
+    },
+    "node-ansiparser": {
+      "version": "2.2.0",
+      "resolved": "https://registry.npmjs.org/node-ansiparser/-/node-ansiparser-2.2.0.tgz",
+      "integrity": "sha1-tyTT5eP6WoVCVrtjrOsJHnIHk60=",
+      "dev": true
+    },
+    "node-ansiterminal": {
+      "version": "0.2.1-beta",
+      "resolved": "https://registry.npmjs.org/node-ansiterminal/-/node-ansiterminal-0.2.1-beta.tgz",
+      "integrity": "sha1-9baE9/E3XyDMcD2V+zPifPRu8pA=",
       "dev": true
     },
     "node-int64": {

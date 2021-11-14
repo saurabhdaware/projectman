@@ -1,6 +1,7 @@
 const path = require('path');
-const { createCommandInterface } = require('cli-testing-library');
+const { createCommandInterface, parseOutput } = require('cli-testing-tool');
 const cleanUp = require('./utils/cleanup');
+const { STRING_ESC } = require('cli-testing-tool/lib/cli-ansi-parser');
 
 const NO_PROJECT_FOUND_ERROR =
   '[BOLD_START][RED_START]>>>[COLOR_END][BOLD_END] No projects to open :(';
@@ -40,6 +41,7 @@ describe('projectman open', () => {
 
   // eslint-disable-next-line max-len
   test('should show dropdown with tests and utils and with arrow on utils', async () => {
+    // add tests and utils
     await addProject(__dirname);
     await addProject(path.join(__dirname, 'utils'));
 
@@ -50,9 +52,22 @@ describe('projectman open', () => {
       }
     );
     await openCommandInterface.keys.arrowDown(); // move down to select utils
-    const outputAfterArrowDown = await openCommandInterface.getOutput();
-    expect(outputAfterArrowDown.stringOutput).toBe(
-      '? Select project to open:  › \n    tests\n❯   utils'
+    const { rawOutput } = await openCommandInterface.getOutput();
+    /**
+     * Why slice from last clear line?
+     *
+     * Even though we see one output in terminal, sometimes libraries can create multiple outputs
+     * slicing from the last clear line just makes sure we only get final output.
+     */
+    const outputAfterLastLineClear = rawOutput.slice(
+      rawOutput.lastIndexOf(`${STRING_ESC}2K`)
+    );
+    const parsedOutputAfterLastLineClear = parseOutput(
+      outputAfterLastLineClear
+    );
+
+    expect(parsedOutputAfterLastLineClear.stringOutput).toBe(
+      `? Select project to open:› \ntests \nutils`
     );
   });
 });

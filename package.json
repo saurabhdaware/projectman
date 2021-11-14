@@ -38,7 +38,7 @@
     "prompts": "^2.3.0"
   },
   "devDependencies": {
-    "cli-testing-library": "^0.0.10",
+    "cli-testing-tool": "^0.2.0",
     "eslint": "^7.0.0",
     "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^6.11.0",

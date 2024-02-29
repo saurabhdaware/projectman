@@ -1,12 +1,12 @@
 {
   "name": "projectman",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "lockfileVersion": 2,
   "requires": true,
   "packages": {
     "": {
       "name": "projectman",
-      "version": "2.1.0",
+      "version": "2.1.1",
       "license": "MIT",
       "dependencies": {
         "commander": "^3.0.1",

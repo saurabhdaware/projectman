@@ -63,3 +63,5 @@ typings/
 
 # OSX specific files
 .DS_Store
+
+test-app

@@ -1,6 +1,6 @@
 {
   "name": "projectman",
-  "version": "2.1.2",
+  "version": "2.2.0",
   "description": "Hate opening folders? Select and open your projects in your favourite editor straight from your command line without 'CD'ing into the deeply nested folders.",
   "main": "bin/index.js",
   "bin": {
